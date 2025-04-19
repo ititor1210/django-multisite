@@ -1,0 +1,17 @@
+# 仮想環境
+env/
+venv/
+
+# Pythonキャッシュ
+__pycache__/
+*.pyc
+
+# VSCode設定
+.vscode/
+
+# Django関連
+db.sqlite3
+staticfiles/
+
+# 環境変数など
+.env
