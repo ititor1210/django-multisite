@@ -81,7 +81,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': os.getenv('DB_NAME', 'multisite_db'),
         'USER': os.getenv('DB_USER', 'multisite_user'),
-        'PASSWORD': os.getenv('DB_PASSWORD', 'your_db_password'),
+        'PASSWORD': os.getenv('DB_PASSWORD', '5xdhKDHuCzKLZ4v4SIGsRvgH4Mm2SrAm'),
         'HOST': os.getenv('DB_HOST', 'dpg-d01u5iidbo4c7394sddg-a'),
         'PORT': os.getenv('DB_PORT', '5432'),
     }
