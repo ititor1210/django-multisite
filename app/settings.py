@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-cpg2237l*^mxf98dxhux7=#)d_r3&#d2yv7-3fu$pxf9-=70f!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "localhost").split(",")
+ALLOWED_HOSTS = ['django-multisite.onrender.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
