@@ -8,9 +8,9 @@ load_dotenv()
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # セキュリティ
-SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', 'default_secret_key_for_local')  # 本番用のSECRET_KEYは環境変数で設定
+SECRET_KEY = os.getenv('SECRET_KEY', 'default_secret_key_for_local')
 DEBUG = os.getenv('DJANGO_DEBUG', 'False') == 'True'
-ALLOWED_HOSTS = ['django-multisite.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'localhost,127.0.0.1').split(',')
 
 # アプリケーション定義
 INSTALLED_APPS = [
